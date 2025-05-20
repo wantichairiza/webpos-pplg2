@@ -89,7 +89,8 @@ if ($msg == 'updated') {
                 <th>Nama</th>
                 <th>Telpon</th>
                 <th>Alamat</th>
-                <th style="width: 10%;">Operasi</th>
+                
+             <th style="width: 10%;">Operasi</th>
               </tr>
             </thead>
             <tbody>
@@ -102,6 +103,7 @@ if ($msg == 'updated') {
                   <td><?= $s['nama'] ?></td>
                   <td><?= $s['telp'] ?></td>
                   <td><?= $s['alamat'] ?></td>
+                 
                   <td>
                     <a href="edit-customer.php?id=<?= $s['id_customer'] ?>" class="btn btn-sm btn-warning"><i
                         class="far fa-edit"></i></a>
