@@ -56,14 +56,14 @@ function insert($data)
     return mysqli_affected_rows($koneksi);
 }
 
-function delete($id, $foto)
+function delete($id, $gbr)
 {
     global $koneksi;
 
-    $sqlData = "DELETE FROM tbl_user WHERE userid = $id";
-    mysqli_query($koneksi, $sqlData);
-    if ($foto != 'default.jpg') {
-        unlink('../assets/image/' . $foto);
+    $sqlDel = "DELETE FROM tbl_barang WHERE id_barang = '$id'";
+    mysqli_query($koneksi, $sqlDel);
+    if ($gbr != 'default-barang.jpg') {
+        unlink('../assets/image/' . $gbr);
     }
     return mysqli_affected_rows($koneksi);
 }

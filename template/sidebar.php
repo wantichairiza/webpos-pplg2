@@ -53,7 +53,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="<?= $main_url; ?>barang" class="nav-link <?= menuBarang() ?>">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Barang</p>
                                 </a>
